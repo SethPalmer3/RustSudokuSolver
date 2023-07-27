@@ -1,6 +1,9 @@
 
 use super::structures::SudokuBoard;
 
+/// parses a string into a SudokuBoard structure
+/// use '.' for unkown cells and any number 1-9 for known cells
+/// **THIS WILL NOT FIX OR WARN IF GIVEN AN INVALID BOARD STRING**
 pub(crate) fn parse_board(b_string: String) -> SudokuBoard {
     let mut row_i = 0;
     let mut col_i = 0;
